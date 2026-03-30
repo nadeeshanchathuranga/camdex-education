@@ -1,0 +1,183 @@
+@media only screen and (max-width:767px) {
+.font-110 {
+    font-size: 40px;
+}
+.font-172 {
+    font-size: 40px;
+}
+.font-48 {
+    font-size: 36px;
+}
+.font-64 {
+    font-size: 36px;
+}
+.e-top-section {
+    margin-top: 3em;
+    z-index: 100;
+}
+.video-section {
+    min-height: 250px;
+  
+}
+.tution-fees-row {
+    min-height: auto;
+  
+}
+.card-1 {
+    width: 100%;
+}
+.left-3em {
+    margin-left: 0;
+}
+.syllabus-toggle i {
+    font-size: 27px;
+     
+}
+
+.syllabus-toggle {
+   
+    font-size: 27px;
+    
+}
+.stats-item h3 {
+    font-size: 48px;
+     
+}
+
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+.stats-item p {
+     
+    font-size: 16px;
+     
+}
+.tution-fees-row {
+    min-height: auto;
+     
+}
+.font-172 {
+    font-size: 90px;
+}
+.left-3em {
+    margin-left: 0;
+}
+
+.e-top-section {
+    margin-top: 2em;
+ 
+}
+.section-e {
+    height: 370px;
+}
+
+.mt8 {
+    margin-top: -1em;
+}
+}
+
+
+
+@media (min-width:992px) and (max-width:1199px) {
+.font-172 {
+    font-size: 120px;
+}
+.font-18 {
+    font-size: 16px;
+}
+
+.font-48 {
+    font-size: 36px;
+}
+.left-3em {
+    margin-left: 0;
+}
+.card-1 {
+    width: 100%;
+}
+.e-top-section {
+    margin-top: 2em;
+ 
+}
+.section-e {
+    height: 370px;
+}
+
+}
+
+
+
+@media (min-width: 1400px) {
+.font-12 {
+    font-size: 12px;
+}
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-24 {
+    font-size: 24px;
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-48 {
+    font-size: 48px;
+}
+.font-64 {
+    font-size: 64px;
+}
+.font-110 {
+    font-size: 110px;
+}
+.font-172 {
+    font-size: 172px;
+}
+
+.tution-fees-section{
+    min-height: 900px;
+   
+}
+
+ .card-1{
+    width: 420px;
+}
+
+.tution-fees-row{
+    min-height: 900px;
+   
+}
+.stats-item h3 {
+    font-size: 64px;
+    
+}
+.stats-item p {
+   
+    font-size: 30px;
+    
+    gap: 1.5rem;
+}
+.stats-item i {
+    
+    font-size: 27px;
+}
+.syllabus-toggle {
+ 
+    font-size: 36px;
+    
+}
+}
