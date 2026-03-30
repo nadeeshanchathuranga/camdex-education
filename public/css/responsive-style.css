@@ -9,7 +9,7 @@
     font-size: 36px;
 }
 .font-64 {
-    font-size: 36px;
+    font-size: 33px;
 }
 .e-top-section {
     margin-top: 3em;
@@ -43,7 +43,36 @@
     font-size: 48px;
 
 }
+.menu-toggle-btn{
+  margin-top: -2em;
 
+}
+
+.mobile-nav-panel {
+    background: #3a5bad !important;
+    position: absolute;
+    width: 88%;
+    z-index: 100;
+
+}
+
+.stats-item p {
+
+    display: block;
+
+}
+
+.banner-main-title .main-blue  {
+
+    font-size: 27px;
+}
+.banner-main-title .main-red {
+
+    font-size: 27px;
+}
+.stats-strip-section {
+text-align: center;
+}
 
 }
 
@@ -183,4 +212,18 @@
 .font-40 {
     font-size: 40px;
 }
+
+
+.carousel {
+    position: absolute;
+    bottom: -6.2em;
+    right: 14em;
+
+}
+
+
+
+
+
+
 }

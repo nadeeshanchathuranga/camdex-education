@@ -6,9 +6,9 @@
 
 
  <div class="container-fluid slider-section bg-brand-blue-dark">
-      <div class="container ">
-<div class="row">
-<div class="col-5">
+   <div class="container ">
+<div class="row align-items-center gy-4">
+<div class="col-lg-5 col-12 z-10">
     <h3 class="fw-bold text-light-white font-110">
         Nurturing Minds
 
@@ -33,24 +33,24 @@ Futures
 
    </div>
 </div>
-<div class="col-7">
+<div class="col-lg-7 col-12">
 
 
-   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
   <div class="carousel-inner">
     <div class="carousel-item active">
-           <img :src="'/images/slider-1.png'" class="w-100" alt="Camdex Education">
+                <img :src="'/images/slider-1.png'" class="d-block w-100 hero-carousel-img" alt="Camdex Education">
     </div>
-    
-    <div class="carousel-item">
-         <img :src="'/images/slider-1.png'" class="w-100" alt="Camdex Education">
-    </div>
+
+    <!-- <div class="carousel-item">
+             <img :src="'/images/slider-2.png'" class="d-block w-100 hero-carousel-img" alt="Camdex Education">
+    </div> -->
   </div>
- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+ <button class="carousel-control-prev d-none d-md-flex" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <button class="carousel-control-next d-none d-md-flex" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -153,11 +153,11 @@ Futures
             </div>
 
 
-             <div class="col-lg-4">
+             <div class="col-lg-4 col-6">
                 <img :src="'/images/edexcel.png'" class="w-100" alt="Camdex Education">
             </div>
 
-             <div class="col-lg-4">
+             <div class="col-lg-4 col-6">
                 <img :src="'/images/cambridge.png'" class="w-100" alt="Camdex Education">
             </div>
 
@@ -205,7 +205,7 @@ Futures
    <div id="about" class="container-fluid about-section py-5">
       <div class="container pt-lg-5">
          <div class="row">
-            <div class="col-lg-4 col-sm-4">
+            <div class="col-lg-4 col-sm-4 col-8 mx-auto">
                <img :src="'/images/logo-2.png'" class="w-100 mt-3" alt="Camdex Education">
             </div>
             <div class="col-lg-8 col-sm-8">
@@ -220,12 +220,12 @@ Futures
          </div>
          <div id="instructors" class="row pt-5">
             <div class="col-12 pt-lg-4">
-               <h2 class="fw-normal font-black font-64 pb-5">
+               <h2 class="fw-normal font-black font-64 pb-lg-5 pb-3">
                   Instructors Directory.
                </h2>
             </div>
-            <div class="row">
-               <div class="col-lg-4 col-sm-6 pb-5">
+            <div ref="instructorsCarousel" class="row instructors-grid">
+               <div class="col-lg-4 col-sm-6 pb-lg-5">
                   <article class="instructor-flip-card">
                      <div class="instructor-flip-card-inner">
                         <div class="instructor-flip-front">
@@ -246,7 +246,7 @@ Futures
                   </h3>
                   <p class="font-20 text-dark fw-normal ">Lecture</p>
                </div>
-               <div class="col-lg-4 col-sm-6 pb-5">
+               <div class="col-lg-4 col-sm-6 pb-lg-5">
                   <article class="instructor-flip-card">
                      <div class="instructor-flip-card-inner">
                         <div class="instructor-flip-front">
@@ -267,7 +267,7 @@ Futures
                   </h3>
                   <p class="font-20 text-dark fw-normal ">Lecture</p>
                </div>
-               <div class="col-lg-4 col-sm-6 pb-5">
+               <div class="col-lg-4 col-sm-6 pb-lg-5">
                   <article class="instructor-flip-card">
                      <div class="instructor-flip-card-inner">
                         <div class="instructor-flip-front">
@@ -288,7 +288,7 @@ Futures
                   </h3>
                   <p class="font-20 text-dark fw-normal ">Lecture</p>
                </div>
-               <div class="col-lg-4 col-sm-6 pb-5">
+               <div class="col-lg-4 col-sm-6 pb-lg-5">
                   <article class="instructor-flip-card">
                      <div class="instructor-flip-card-inner">
                         <div class="instructor-flip-front">
@@ -309,7 +309,7 @@ Futures
                   </h3>
                   <p class="font-20 text-dark fw-normal ">Lecture</p>
                </div>
-               <div class="col-lg-4 col-sm-6 pb-5">
+               <div class="col-lg-4 col-sm-6 pb-lg-5">
                   <article class="instructor-flip-card">
                      <div class="instructor-flip-card-inner">
                         <div class="instructor-flip-front">
@@ -330,7 +330,7 @@ Futures
                   </h3>
                   <p class="font-20 text-dark fw-normal ">Lecture</p>
                </div>
-               <div class="col-lg-4 col-sm-6 pb-5">
+               <div class="col-lg-4 col-sm-6 pb-lg-5">
                   <article class="instructor-flip-card">
                      <div class="instructor-flip-card-inner">
                         <div class="instructor-flip-front">
@@ -687,8 +687,10 @@ Futures
    const activeVideoLink = ref('');
    const validationMessage = ref('');
    const reviewsCarousel = ref(null);
+   const instructorsCarousel = ref(null);
    const openSyllabusSection = ref('cambridge');
    let heroCarouselInstance = null;
+   let handleWindowResize = null;
 
    // Replace this with your real YouTube share link.
    const videoLink = 'https://youtu.be/_UCA0tXzMMU?si=7dcjhq9rlp0Zq3db';
@@ -798,11 +800,77 @@ Futures
          }
       };
 
+      const initInstructorsCarousel = () => {
+         const $ = window.jQuery || window.$;
+
+         if (!$ || !instructorsCarousel.value || !$.fn || !$.fn.owlCarousel) {
+            return;
+         }
+
+         const isMobileViewport = window.innerWidth <= 767;
+         const $carousel = $(instructorsCarousel.value);
+
+         if (!isMobileViewport) {
+            if ($carousel.hasClass('owl-loaded')) {
+               $carousel.trigger('destroy.owl.carousel');
+            }
+            $carousel.removeClass('owl-carousel');
+            return;
+         }
+
+         if (!$carousel.hasClass('owl-carousel')) {
+            $carousel.addClass('owl-carousel');
+         }
+
+         if ($carousel.hasClass('owl-loaded')) {
+            return;
+         }
+
+         $carousel.owlCarousel({
+            items: 1,
+            margin: 16,
+            loop: true,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3200,
+            autoplayHoverPause: true,
+            navText: [
+               '<i class="fa-solid fa-chevron-left" aria-hidden="true"></i>',
+               '<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>',
+            ],
+            smartSpeed: 600,
+         });
+      };
+
+      const destroyInstructorsCarousel = () => {
+         const $ = window.jQuery || window.$;
+
+         if (!$ || !instructorsCarousel.value || !$.fn || !$.fn.owlCarousel) {
+            return;
+         }
+
+         const $carousel = $(instructorsCarousel.value);
+
+         if ($carousel.hasClass('owl-loaded')) {
+            $carousel.trigger('destroy.owl.carousel');
+         }
+
+         $carousel.removeClass('owl-carousel');
+      };
+
    onMounted(() => {
        const modalElement = document.getElementById('videoModal');
          const heroCarouselElement = document.getElementById('carouselExampleFade');
 
          initReviewsCarousel();
+         initInstructorsCarousel();
+
+         handleWindowResize = () => {
+            initInstructorsCarousel();
+         };
+
+         window.addEventListener('resize', handleWindowResize);
 
          if (heroCarouselElement && window.bootstrap?.Carousel) {
             heroCarouselInstance = new window.bootstrap.Carousel(heroCarouselElement, {
@@ -829,6 +897,12 @@ Futures
        }
 
          destroyReviewsCarousel();
+         destroyInstructorsCarousel();
+
+         if (handleWindowResize) {
+            window.removeEventListener('resize', handleWindowResize);
+            handleWindowResize = null;
+         }
 
           if (heroCarouselInstance) {
                 heroCarouselInstance.dispose();
@@ -840,71 +914,7 @@ Futures
 
 </script>
 
-<style scoped>
-.banner-section {
-   background: #ccdaf0;
-}
-
-.banner-top-text {
-   color: #2a57ab;
-   font-size: clamp(1.8rem, 3.1vw, 3.35rem);
-   line-height: 1.1;
-   font-weight: 300;
-}
-
-.edexcel-logo {
-   color: #003f76;
-   font-size: clamp(2.2rem, 4.4vw, 5.2rem);
-   font-weight: 600;
-   letter-spacing: 0.02em;
-   line-height: 1;
-}
-
-.mini-squares {
-   display: grid;
-   grid-template-columns: repeat(4, 14px);
-   gap: 6px;
-}
-
-.mini-squares span {
-   width: 14px;
-   height: 14px;
-   border-radius: 3px;
-   background: #73c6ef;
-}
-
-.cambridge-brand {
-   color: #0b1b3b;
-   font-size: clamp(1.3rem, 2vw, 2.15rem);
-   font-weight: 600;
-   line-height: 1.2;
-   text-align: left;
-}
-
-.banner-main-title {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: baseline;
-   gap: 0.35em;
-   font-weight: 700;
-   line-height: 1.02;
-}
-
-.banner-main-title .main-blue {
-   color: #2f78de;
-   font-size: clamp(2.2rem, 6vw, 8.3rem);
-}
-
-.banner-main-title .sub-blue {
-   color: #4f78c0;
-   font-size: clamp(1.9rem, 4.2vw, 5rem);
-   font-weight: 400;
-}
-
-.banner-main-title .main-red {
-   color: #ef2f3b;
-   font-size: clamp(2.2rem, 6vw, 8.3rem);
-}
+<!-- <style scoped>
 
 @media (min-width: 992px) {
    .cambridge-brand {
@@ -912,44 +922,19 @@ Futures
    }
 }
 
-.hero-cta-row {
-   max-width: 440px;
-}
 
-.hero-btn-enroll,
-.hero-btn-learn {
-     transition: .5s ease-in-out;
-     min-height: 60px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 400;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.25s ease;
-}
-.hero-btn-enroll {
+@media (max-width: 991.98px) {
+   .slider-section {
+      padding-top: 1.25rem;
+      padding-bottom: 1.75rem;
+   }
 
-   background: #f2f2f2;
-   color: #1f2d3d;
-}
+   .hero-carousel .carousel-item {
+      min-height: 260px;
+   }
 
-.hero-btn-enroll:hover {
-   background: #9cb8ff;
-   color: #fff;
-    transition: .5s ease-in-out;
+   .hero-carousel-img {
+      height: clamp(240px, 70vw, 420px);
+   }
 }
-
-.hero-btn-learn {
-   border: 2px solid #9cb8ff;
-   color: #ffffff;
-   background: rgba(16, 44, 117, 0.45);
-}
-
-.hero-btn-learn:hover {
-   background: #ffffff;
-   color: #15367d;
-    transition: .5s ease-in-out;
-   border-color: #ffffff;
-}
-</style>
+</style> -->

@@ -2,13 +2,13 @@
   <div class="container-fluid bg-brand-blue-dark">
     <div class="container">
       <div class="row align-items-center py-2">
-        <div class="col-8 col-lg-3">
+        <div class=" col-lg-3 col-6">
           <RouterLink to="/" title="Camdex Education | Home">
             <img :src="'/images/logo.png'" class="w-100" alt="Camdex Education">
           </RouterLink>
         </div>
 
-        <div class="col-4 col-lg-9">
+        <div class="col-lg-9 col-6">
           <div class="d-flex justify-content-end d-lg-none">
             <button
               class="menu-toggle-btn"
@@ -86,68 +86,3 @@ const closeMenu = () => {
 }
 </script>
 
-<style scoped>
-.menu-toggle-btn {
-  width: 44px;
-  height: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  padding: 0 10px;
-}
-
-.menu-toggle-line {
-  display: block;
-  width: 100%;
-  height: 2px;
-  border-radius: 2px;
-  background: #fff;
-}
-
-.nav-links-list,
-.mobile-nav-links {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-links-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-    margin-top: -4em;
-}
-
-.mobile-nav-panel {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  padding: 10px 12px;
-}
-
-.mobile-nav-links {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-}
-
-.nav-link-custom {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 400;
-
-  transition: opacity 0.2s ease;
-}
-
-.nav-link-custom:hover,
-.nav-link-custom.active {
-   color: #b9b7b7;
-}
-
-
-</style>

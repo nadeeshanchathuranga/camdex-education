@@ -361,7 +361,7 @@ ul li {
 }
 
 .instructor-flip-front img {
-    width: 100%;
+
     height: 100%;
     object-fit: cover;
 }
@@ -606,4 +606,198 @@ ul li {
     padding: 15px 25px;
     background-color: #3053a3;
     border-radius: 30px;
+}
+.z-10 {
+    z-index: 10;
+}
+.menu-toggle-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 10px;
+}
+
+.menu-toggle-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.nav-links-list,
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+    margin-top: -4em;
+}
+
+.mobile-nav-panel {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.nav-link-custom {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+
+  transition: opacity 0.2s ease;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+   color: #b9b7b7;
+}
+
+.hero-cta-row {
+   max-width: 440px;
+}
+
+.hero-btn-enroll,
+.hero-btn-learn {
+     transition: .5s ease-in-out;
+     min-height: 60px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
+.hero-btn-enroll {
+
+   background: #f2f2f2;
+   color: #1f2d3d;
+}
+
+.hero-btn-enroll:hover {
+   background: #9cb8ff;
+   color: #fff;
+    transition: .5s ease-in-out;
+}
+
+.hero-btn-learn {
+   border: 2px solid #9cb8ff;
+   color: #ffffff;
+   background: rgba(16, 44, 117, 0.45);
+}
+
+.hero-btn-learn:hover {
+   background: #ffffff;
+   color: #15367d;
+    transition: .5s ease-in-out;
+   border-color: #ffffff;
+}
+
+.slider-section {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.hero-carousel.carousel {
+   position: relative !important;
+   right: auto !important;
+   bottom: auto !important;
+}
+
+.hero-carousel .carousel-inner {
+   border-radius: 12px;
+}
+
+.hero-carousel .carousel-item {
+   min-height: 340px;
+}
+
+.hero-carousel-img {
+   height: clamp(300px, 42vw, 560px);
+   object-fit: contain;
+   object-position: center;
+}
+.banner-section {
+   background: #ccdaf0;
+}
+
+.banner-top-text {
+   color: #2a57ab;
+   font-size: clamp(1.8rem, 3.1vw, 3.35rem);
+   line-height: 1.1;
+   font-weight: 300;
+}
+
+.edexcel-logo {
+   color: #003f76;
+   font-size: clamp(2.2rem, 4.4vw, 5.2rem);
+   font-weight: 600;
+   letter-spacing: 0.02em;
+   line-height: 1;
+}
+
+.mini-squares {
+   display: grid;
+   grid-template-columns: repeat(4, 14px);
+   gap: 6px;
+}
+
+.mini-squares span {
+   width: 14px;
+   height: 14px;
+   border-radius: 3px;
+   background: #73c6ef;
+}
+
+.cambridge-brand {
+   color: #0b1b3b;
+   font-size: clamp(1.3rem, 2vw, 2.15rem);
+   font-weight: 600;
+   line-height: 1.2;
+   text-align: left;
+}
+
+.banner-main-title {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: baseline;
+   gap: 0.35em;
+   font-weight: 700;
+   line-height: 1.02;
+}
+
+.banner-main-title .main-blue {
+   color: #2f78de;
+   font-size: clamp(2.2rem, 6vw, 8.3rem);
+}
+
+.banner-main-title .sub-blue {
+   color: #4f78c0;
+   font-size: clamp(1.9rem, 4.2vw, 5rem);
+   font-weight: 400;
+}
+
+.banner-main-title .main-red {
+   color: #ef2f3b;
+   font-size: clamp(2.2rem, 6vw, 8.3rem);
 }
