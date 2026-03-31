@@ -372,8 +372,8 @@ Futures
 
          <div class="row pt-5">
             <div class="col-12">
-               <section class="syllabus-section">
-                  <div class="syllabus-group mb-4">
+               <div class="syllabus-section">
+                  <div class="syllabus-group ">
                      <button type="button" class="syllabus-toggle border-bottom pb-3" @click="toggleSyllabus('cambridge')" :aria-expanded="openSyllabusSection === 'cambridge'">
                         <span>CAMBRIDGE</span>
                         <i :class="openSyllabusSection === 'cambridge' ? 'fa-solid fa-angle-up' : 'fa-solid fa-angle-down'"></i>
@@ -389,6 +389,7 @@ Futures
                         <!-- 2026 OL Theory Tab -->
                         <div v-if="activeCambridgeYear === '2026-theory'" class="syllabus-table-wrap mb-3 animation-fade-in">
                            <h5 class="fw-bold font-20 text-dark mb-3">General Subjects (2026 OL Theory)</h5>
+                          <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -425,8 +426,11 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
+                        </div>
 
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Science Subjects (2026 OL Theory)</h5>
+
+<div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -453,8 +457,10 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Business Subjects (2026 OL Theory)</h5>
+
+                       <div class="table-responsive">
                            <table class="table syllabus-table mb-0">
                               <thead>
                                  <tr>
@@ -481,11 +487,15 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
+                        </div>
+
+                        </div>
                         </div>
 
                         <!-- 2026 OL Paper Tab -->
                         <div v-if="activeCambridgeYear === '2026-paper'" class="syllabus-table-wrap mb-3 animation-fade-in">
                            <h5 class="fw-bold font-20 text-dark mb-3">General Subjects (2026 OL Paper)</h5>
+                           <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -522,8 +532,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Science Subjects (2026 OL Paper)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -550,8 +561,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Business Subjects (2026 OL Paper)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-0">
                               <thead>
                                  <tr>
@@ -579,10 +591,12 @@ Futures
                               </tbody>
                            </table>
                         </div>
+                        </div>
 
                         <!-- 2027 Theory Tab -->
                         <div v-if="activeCambridgeYear === '2027-theory'" class="syllabus-table-wrap mb-3 animation-fade-in">
                            <h5 class="fw-bold font-20 text-dark mb-3">General Subjects (2027 Theory)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -619,8 +633,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Science Subjects (2027 Theory)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -647,8 +662,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Business Subjects (2027 Theory)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-0">
                               <thead>
                                  <tr>
@@ -675,6 +691,7 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
+                        </div>
                         </div>
                      </div>
                   </div>
@@ -695,6 +712,7 @@ Futures
                         <!-- 2026 Theory Content -->
                         <div v-if="activeEdexcelYear === '2026-theory'" class="syllabus-table-wrap mb-3">
                            <h5 class="fw-bold font-20 text-dark mb-3">General Subjects (2026 OL Theory)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -731,8 +749,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Science Subjects (2026 OL Theory)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -759,8 +778,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Business Subjects (2026 OL Theory)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-0">
                               <thead>
                                  <tr>
@@ -787,11 +807,13 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
+                        </div>
                         </div>
 
                         <!-- 2026 Paper Content -->
                         <div v-if="activeEdexcelYear === '2026-paper'" class="syllabus-table-wrap mb-3">
                            <h5 class="fw-bold font-20 text-dark mb-3">General Subjects (2026 OL Paper)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -828,8 +850,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Science Subjects (2026 OL Paper)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -856,8 +879,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Business Subjects (2026 OL Paper)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-0">
                               <thead>
                                  <tr>
@@ -884,11 +908,13 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
+                        </div>
                         </div>
 
                         <!-- 2027 Theory Content -->
                         <div v-if="activeEdexcelYear === '2027-theory'" class="syllabus-table-wrap mb-3">
                            <h5 class="fw-bold font-20 text-dark mb-3">General Subjects (2027 Theory)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -925,8 +951,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Science Subjects (2027 Theory)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-4">
                               <thead>
                                  <tr>
@@ -953,8 +980,9 @@ Futures
                                  </tr>
                               </tbody>
                            </table>
-
+</div>
                            <h5 class="fw-bold font-20 text-dark mb-3 pt-3">Business Subjects (2027 Theory) (2027 Theory)</h5>
+                            <div class="table-responsive">
                            <table class="table syllabus-table mb-0">
                               <thead>
                                  <tr>
@@ -982,19 +1010,29 @@ Futures
                               </tbody>
                            </table>
                         </div>
+                        </div>
                      </div>
                   </div>
-               </section>
+                </div>
             </div>
          </div>
 
 
-         <div class="row pt-5">
+
+      </div>
+
+
+
+
+
+      <div class="container-fluid">
+        <div class="container">
+            <div class="row ">
             <div class="col-12">
                <section id="apply-now" class="apply-now-section py-4 py-lg-5">
                   <h2 class="font-172 fw-bold text-dark text-center pb-3">APPLY NOW</h2>
 
-         <div class="row align-items-center border-bottom border-3 border-top-0 border-end-0 border-start-0 border-secondary pb-4 mx-3 my-5">
+         <div class="row align-items-center border-bottom border-3 border-top-0 border-end-0 border-start-0 border-secondary pb-4 mx-lg-3 my-5">
                     <div class="col-2"><p class="fw-bold font-20 text-dark">01</p></div>
                     <div class="col-lg-3 col-7"><p class="fw-bold font-20 text-dark">You Apply</p></div>
                     <div class="col-lg-7 col-12 pt-lg-0 pt-2">
@@ -1004,7 +1042,7 @@ Futures
 
 
 
-<div class="row align-items-center border-bottom border-3 border-top-0 border-end-0 border-start-0 border-secondary pb-4 mx-3 my-5">
+<div class="row align-items-center border-bottom border-3 border-top-0 border-end-0 border-start-0 border-secondary pb-4 mx-lg-3 my-5">
                     <div class="col-2"><p class="fw-bold font-20 text-dark">02</p></div>
                     <div class="col-lg-3 col-7"><p class="fw-bold font-20 text-dark">We Connect</p></div>
                     <div class="col-lg-7 col-12 pt-lg-0 pt-2">
@@ -1016,7 +1054,7 @@ Futures
 
 
 
-<div class="row align-items-center border-bottom border-3 border-top-0 border-end-0 border-start-0 border-secondary pb-4 mx-3 my-5">
+<div class="row align-items-center border-bottom border-3 border-top-0 border-end-0 border-start-0 border-secondary pb-4 mx-lg-3 my-5">
                     <div class="col-2"><p class="fw-bold font-20 text-dark">03</p></div>
                     <div class="col-lg-3 col-7"><p class="fw-bold font-20 text-dark">You Get Ready</p></div>
                     <div class="col-lg-7 col-12 pt-lg-0 pt-2">
@@ -1031,8 +1069,9 @@ Futures
                </section>
             </div>
          </div>
+        </div>
       </div>
-   </div>
+
    <div id="class-fees" class="container-fluid tution-fees-section px-lg-0">
       <div class="row ">
          <div class="col-lg-6 bg-brand-blue p-5 tution-fees-row">

@@ -595,9 +595,8 @@ ul li {
 .syllabus-group {
     background: #fff;
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
-    margin-bottom: 20px;
+    padding: 20px 0;
+
 }
 
 .syllabus-year-pill {
@@ -655,6 +654,11 @@ ul li {
     border: 0;
     font-weight: 600;
     padding: 0.82rem 0.9rem;
+}
+
+.syllabus-table thead th:nth-child(3),
+.syllabus-table tbody td:nth-child(3) {
+    white-space: nowrap;
 }
 
 .syllabus-table tbody tr + tr td {
