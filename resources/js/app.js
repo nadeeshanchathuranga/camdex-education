@@ -4,11 +4,13 @@ import { createRouter, createWebHistory, RouterView } from 'vue-router';
 import Index from './views/Index.vue';
 import About from './views/About.vue';
 import Instructor from './views/Instructor.vue';
+import ClassFees from './views/ClassFees.vue';
 
 const routes = [
 	{ path: '/', name: 'home', component: Index },
 	{ path: '/about', name: 'about', component: About },
 	{ path: '/instructor', name: 'instructor', component: Instructor },
+	{ path: '/class-fees', name: 'class-fees', component: ClassFees },
 ];
 
 const router = createRouter({
@@ -42,6 +44,7 @@ const pageRouteMap = {
 	index: '/',
 	about: '/about',
 	instructor: '/instructor',
+	'class-fees': '/class-fees',
 };
 
 const targetPath = pageRouteMap[page] ?? '/';

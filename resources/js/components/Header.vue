@@ -26,22 +26,22 @@
           <nav class="desktop-nav d-none d-lg-flex justify-content-end">
             <ul class="nav-links-list mb-0">
               <li>
-                <RouterLink class="nav-link-custom" to="/" exact-active-class="active" aria-current="page">Home</RouterLink>
+                <RouterLink class="nav-link-custom" to="/" active-class="active" exact-active-class="active" aria-current="page">Home</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom" to="/about">About</RouterLink>
+                <RouterLink class="nav-link-custom" to="/about" active-class="active" exact-active-class="active">About</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom" to="/instructor">Instructors</RouterLink>
+                <RouterLink class="nav-link-custom" to="/instructor" active-class="active" exact-active-class="active">Instructors</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom" :to="{ path: '/', hash: '#class-fees' }">Class Fees</RouterLink>
+                <RouterLink class="nav-link-custom" to="/class-fees" active-class="active" exact-active-class="active">Class Fees</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom" :to="{ path: '/', hash: '#faq' }">FAQ</RouterLink>
+                <RouterLink class="nav-link-custom" :to="{ path: '/', hash: '#faq' }" active-class="active" exact-active-class="active">FAQ</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom btn-nav" :to="{ path: '/', hash: '#join-us' }">Join us</RouterLink>
+                <RouterLink class="nav-link-custom btn-nav" :to="{ path: '/', hash: '#join-us' }" active-class="active" exact-active-class="active">Join us</RouterLink>
               </li>
             </ul>
           </nav>
@@ -56,22 +56,22 @@
             </div>
             <ul class="mobile-nav-links mb-0">
               <li>
-                <RouterLink class="nav-link-custom" to="/" exact-active-class="active" aria-current="page" @click="closeMenu">Home</RouterLink>
+                <RouterLink class="nav-link-custom" to="/" active-class="active" exact-active-class="active" aria-current="page" @click="closeMenu">Home</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom" to="/about" @click="closeMenu">About</RouterLink>
+                <RouterLink class="nav-link-custom" to="/about" active-class="active" exact-active-class="active" @click="closeMenu">About</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom" to="/instructor" @click="closeMenu">Instructors</RouterLink>
+                <RouterLink class="nav-link-custom" to="/instructor" active-class="active" exact-active-class="active" @click="closeMenu">Instructors</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom" :to="{ path: '/', hash: '#class-fees' }" @click="closeMenu">Class Fees</RouterLink>
+                <RouterLink class="nav-link-custom" to="/class-fees" active-class="active" exact-active-class="active" @click="closeMenu">Class Fees</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom" :to="{ path: '/', hash: '#faq' }" @click="closeMenu">FAQ</RouterLink>
+                <RouterLink class="nav-link-custom" :to="{ path: '/', hash: '#faq' }" active-class="active" exact-active-class="active" @click="closeMenu">FAQ</RouterLink>
               </li>
               <li>
-                <RouterLink class="nav-link-custom" :to="{ path: '/', hash: '#join-us' }" @click="closeMenu">Join us</RouterLink>
+                <RouterLink class="nav-link-custom" :to="{ path: '/', hash: '#join-us' }" active-class="active" exact-active-class="active" @click="closeMenu">Join us</RouterLink>
               </li>
             </ul>
           </nav>

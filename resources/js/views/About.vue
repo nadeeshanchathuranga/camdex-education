@@ -1,5 +1,5 @@
 <template>
-   <div class="page-wrapper">
+
       <Header />
       <div class="container-fluid">
          <div class="row">
@@ -70,7 +70,7 @@
       </div>
       <Form />
       <Footer />
-   </div>
+
 </template>
 <script setup>
    import Header from '../components/Header.vue';

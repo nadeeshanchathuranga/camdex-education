@@ -21,5 +21,10 @@ class PageController extends Controller
         return view('app', ['page' => 'instructor']);
     }
 
+    public function ClassFees(): View
+    {
+        return view('app', ['page' => 'class-fees']);
+    }
+
 
 }
