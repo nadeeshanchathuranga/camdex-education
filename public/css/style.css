@@ -571,6 +571,24 @@ ul li {
     width: 290px;
 }
 
+.mission-more-wrap {
+    position: relative;
+}
+
+
+
+    .mission-more-image-col {
+       position: absolute;
+    top: -6em;
+    right: 8em;
+    height: 100%;
+    width: 37%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    }
+
+
 
 .syllabus-toggle {
     width: 100%;
@@ -719,7 +737,7 @@ ul li {
   display: flex;
   align-items: center;
   gap: 40px;
-    margin-top: -4em;
+
 }
 
 .mobile-nav-panel {
@@ -916,4 +934,11 @@ ul li {
 .banner-main-title .main-red {
    color: #ef2f3b;
    font-size: clamp(2.2rem, 6vw, 8.3rem);
+}
+/* inner section */
+
+
+.inener-section {
+    min-height: 340px;
+    margin-top: -10em;
 }
