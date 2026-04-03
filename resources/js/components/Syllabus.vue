@@ -5,26 +5,26 @@
                <div class="bg-light p-4 rounded shadow-sm">
                   <div class="row g-4">
                      <div class="col-12">
-                        <h6 class="fw-bold text-secondary mb-3 text-uppercase" style="letter-spacing: 1px; font-size: 0.85rem;">Select Syllabus</h6>
+                        <h6 class="fw-bolder text-black mb-3 text-uppercase font-20"  >Select Syllabus</h6>
                         <div class="d-flex flex-wrap gap-2">
                            <input type="checkbox" class="btn-check" id="sylCambridge" value="cambridge" v-model="selectedSyllabus" autocomplete="off">
-                           <label class="btn btn-outline-primary rounded-pill px-4 py-2 fw-medium border-2" for="sylCambridge">Cambridge</label>
+                           <label class="btn btn-outline-brand-blue rounded-pill px-4 py-2 fw-medium border-2" for="sylCambridge">Cambridge</label>
 
                            <input type="checkbox" class="btn-check" id="sylEdexcel" value="edexcel" v-model="selectedSyllabus" autocomplete="off">
-                           <label class="btn btn-outline-primary rounded-pill px-4 py-2 fw-medium border-2" for="sylEdexcel">Edexcel</label>
+                           <label class="btn btn-outline-brand-blue rounded-pill px-4 py-2 fw-medium border-2" for="sylEdexcel">Edexcel</label>
                         </div>
                      </div>
                      <div class="col-12">
-                        <h6 class="fw-bold text-secondary mb-3 text-uppercase" style="letter-spacing: 1px; font-size: 0.85rem;">Select Course Type</h6>
+                        <h6 class="fw-bolder text-black mb-3 text-uppercase font-20">Select Course Type</h6>
                         <div class="d-flex flex-wrap gap-2">
                            <input type="checkbox" class="btn-check" id="course26Theory" value="2026-theory" v-model="selectedCourse" autocomplete="off">
-                           <label class="btn btn-outline-success rounded-pill px-4 py-2 fw-medium border-2" for="course26Theory">2026 OL Theory</label>
+                           <label class="btn btn-outline-brand-charcoal rounded-pill px-4 py-2 fw-medium border-2" for="course26Theory">2026 OL Theory</label>
 
                            <input type="checkbox" class="btn-check" id="course26Paper" value="2026-paper" v-model="selectedCourse" autocomplete="off">
-                           <label class="btn btn-outline-success rounded-pill px-4 py-2 fw-medium border-2" for="course26Paper">2026 OL Paper</label>
+                           <label class="btn btn-outline-brand-charcoal rounded-pill px-4 py-2 fw-medium border-2" for="course26Paper">2026 OL Paper</label>
 
                            <input type="checkbox" class="btn-check" id="course27Theory" value="2027-theory" v-model="selectedCourse" autocomplete="off">
-                           <label class="btn btn-outline-success rounded-pill px-4 py-2 fw-medium border-2" for="course27Theory">2027 Theory</label>
+                           <label class="btn btn-outline-brand-charcoal rounded-pill px-4 py-2 fw-medium border-2" for="course27Theory">2027 Theory</label>
                         </div>
                      </div>
                   </div>
@@ -698,10 +698,5 @@ const resetFilter = () => {
 .fade-filter-leave-to {
   opacity: 0;
   transform: translateY(-10px);
-}
-.btn-check:checked + .btn {
-  background-color: #0d6efd;
-  color: white;
-  border-color: #0d6efd;
 }
 </style>

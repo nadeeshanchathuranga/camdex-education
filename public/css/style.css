@@ -946,3 +946,27 @@ ul li {
     min-height: 340px;
     margin-top: -10em;
 }
+
+/* Custom Brand Blue Button */
+.btn-outline-brand-blue {
+    color: var(--brand-blue);
+    border-color: var(--brand-blue);
+}
+.btn-outline-brand-blue:hover,
+.btn-check:checked + .btn-outline-brand-blue {
+    color: #fff !important;
+    background-color: var(--brand-blue) !important;
+    border-color: var(--brand-blue) !important;
+}
+
+/* Custom Brand Charcoal Button */
+.btn-outline-brand-charcoal {
+    color: var(--brand-charcoal);
+    border-color: var(--brand-charcoal);
+}
+.btn-outline-brand-charcoal:hover,
+.btn-check:checked + .btn-outline-brand-charcoal {
+    color: #fff !important;
+    background-color: var(--brand-charcoal) !important;
+    border-color: var(--brand-charcoal) !important;
+}
